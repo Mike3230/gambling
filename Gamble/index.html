@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <center>
+            <header>
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 50%; text-align: left;">
+                            <a href="tuto.html">
+                                <img src="imagens e videos/Tutorial.png" alt="Tutorial" width="64" height="64" style="text-align: left;">
+                            </a>  
+                        </td>
+                        <td>
+                            <table align="right">
+                                <tr>
+                                    <td style="width: 70%;"><p id="dinheiro" style="background-color: antiquewhite; border-radius: 2px; width: 100%; text-align: right;">0</p></td>
+                                    <td><img src="imagens e videos/Credits.png" alt="Credits" width="64" height="64"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </header>
+            <br>
+            <table>
+            <tr style="height: 125px;"></tr>
+            <tr>
+                <td>
+                    <a href="Gamble.html">
+                    <img src="imagens e videos/Gamble site.png" alt="Gamble" width="256" height="256">
+                    </a>
+                </td>
+                <td style="width: 35%;"></td>
+                <td>
+                    <a href="shop.html">
+                    <img src="imagens e videos/Shop site.png" alt="Shop" width="256" height="256">
+                    </a>
+                </td>
+            </tr>
+        </table>
+        </center>
+
+        <p id="teste"></p>
+        <script>
+        var dinheiro = localStorage.getItem("dinheiro_guardado");
+            document.getElementById("dinheiro").innerHTML = (+dinheiro).toFixed(2)
+        </script>
+    </body>
+</html>
